@@ -1,0 +1,63 @@
+You are a DevOps Engineer responsible for deploying and maintaining
+a cloud-native web application.
+ 
+Application Architecture:
+- Backend API (containerized)
+- Frontend (containerized)
+- PostgreSQL database
+- Deployed on cloud using Terraform
+- Running on Kubernetes
+ 
+Tasks:
+ 
+1️⃣ Scripting (Core DevOps Skill)
+- Write pseudocode or outline a script (Python or Bash) that:
+  - Builds a Docker image 
+  - Tags it with a version and latest 
+  - Pushes it to a container registry 
+- How would you handle:
+  - Failures 
+  - Logging
+  - Secure credential handling
+ 
+2️⃣ Terraform – Cloud Automation
+- Design a Terraform structure to:  
+  - Provision a Kubernetes cluster
+  - Create networking (VPC/VNet, subnets)
+  - Deploy a database service
+- Explain:
+  - Remote state management
+  - State locking
+  - Module structure best practices
+
+
+
+
+3️⃣ Docker
+- Explain how you would:
+  - Optimize a Dockerfile for production 
+  - Reduce image size 
+  - Avoid security vulnerabilities
+- What is the difference between:
+  - CMD vs ENTRYPOINT 
+  - COPY vs ADD 
+- How do you scan images for vulnerabilities?
+
+FROM ubuntu 
+RUN apt update
+RUN apt install git -y
+ 
+4️⃣ Kubernetes
+- How would you deploy the backend API to Kubernetes?
+- Explain:
+  - Deployment vs StatefulSet
+  - Service types 
+  - ConfigMaps vs Secrets 
+- How do you handle:
+  - Rolling updates 
+  - Auto-scaling 
+  - Pod failures
+ 
+ 
+You do NOT need to write production-ready code.
+Focus on explaining your thinking and real-world experience.
